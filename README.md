@@ -59,12 +59,26 @@ to see the structure of the directory.
 To see the test files it is better to use the code redactor program.
 
 ### Technologies that are used in the project
-For the project application with help information, registration form and chat bot widget is used. This is the application of the educational platform that was not developed in this project. In this project an automatical testing of this application, following the technology "Page Object Model"(POM), was written in two files:
-* app.spec.jsx - testing of the application
-* widget.spec.jsx - testing of the chat bot widget
+* For the project **application with help information, registration form and chat bot widget** is used. This is the application of the educational platform that was not developed in this project. 
+
+* In this project an automatical testing of this application, following the technology **"Page Object Model"(POM)**, was written in two files:
+  * app.spec.jsx - testing of the application
+  * widget.spec.jsx - testing of the chat bot widget
+
 **Page Object Model(POM)** is a pattern of projecting for automatization of testing of web-applications. In POM each web-page or massive part of the page is represented as class. This class contains methods which give opportunity to interact with elements of the page such as buttons, input fields etc. Main purpose of the POM is to separate logic of the testing from logic of the interaction with elements of the page.
-In the project coverage of the edge cases was realized. Testing of interaction between the user and the application was developed in \_\_tests\_\_/pages directory files with page models and in \_\_tests\_\_ directory files with test units for Application and Widget. In the conclusion it is important to mention, that the testing of integration of the widget with the application, the model of the widget and the model of the application were made in the project. 
-Also CI/CD was used by linking the project with SonarQube space to check the quality and the correct work of the project.
+
+* In the project **coverage of the edge cases** was realized
+
+* **Testing of interaction between the user and the application** was developed in \_\_tests\_\_/pages directory files with page models and in \_\_tests\_\_ directory files with test units for Application and Widget. 
+
+* In the conclusion it is important to mention, that 
+  * **the testing of integration of the widget with the application**,
+  * **the model of the widget**,
+  * **the model of the application**
+were made in the project. 
+
+* Also **CI/CD** was used by linking the project with SonarQube space to check the quality and the correct work of the project.
+
 **CI/CD (Continuous Integration/Continuous Delivery or Deployment)** - is a metodology of development of program software, that speeds up the release of the product and improves the quality of the product through the automatization of the assembly processes, the testing and the deployment of the code. Continuous Integration (CI) automatizes the merge of the code written by developers in the shared repository with the automatical testing as the following step. Continuous Delivery (CD) prepares the code for release through automatical deployment of the code in the testing space for the subsequent manual launch to production and Continuous Deployment (another interpretation of CD) automatically delivers this code to the users.
 
 ### Important data files in the \_\_fixtures\_\_ directory
